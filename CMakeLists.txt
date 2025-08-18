@@ -20,8 +20,8 @@ target_link_libraries(icart_mini_driver ypspur)
 target_include_directories(icart_mini_driver
        PUBLIC ${ypspur_INCLUDE_DIRS})
 
-# install(FILES scripts/ypspur_coordinator_bridge
-#   DESTINATION ${PROJECT_NAME}/scripts)
+install(PROGRAMS scripts/ypspur_coordinator_bridge
+   DESTINATION share/${PROJECT_NAME}/scripts)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
