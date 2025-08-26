@@ -67,8 +67,8 @@ class Icart_mini_driver : public rclcpp::Node
     void Icart_mini_driver::read_param()
     { 
       declare_parameter("odom_frame_id","odom");
-      declare_parameter("base_frame_id","base_footprint");
-      declare_parameter("Hz",40);
+      declare_parameter("base_frame_id","base_link");
+      declare_parameter("Hz",100);
       declare_parameter("left_wheel_joint","left_wheel_joint");
       declare_parameter("right_wheel_joint","right_wheel_joint");
       declare_parameter("liner_vel_lim",1.5);

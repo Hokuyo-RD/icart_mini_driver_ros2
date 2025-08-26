@@ -1,4 +1,6 @@
-odom_frame_id: odom
-base_frame_id: base_link
-hz: 100
-publish_odom_tf: false
+icart_mini_driver_node:
+  ros__parameters:
+    odom_frame_id: odom
+    base_frame_id: base_link
+    hz: 100
+    publish_odom_tf: false
