@@ -71,10 +71,10 @@ class Icart_mini_driver : public rclcpp::Node
       declare_parameter("Hz",100);
       declare_parameter("left_wheel_joint","left_wheel_joint");
       declare_parameter("right_wheel_joint","right_wheel_joint");
-      declare_parameter("liner_vel_lim",1.5);
-      declare_parameter("liner_accel_lim",1.5);
-      declare_parameter("angular_vel_lim",3.14);
-      declare_parameter("angular_accel_lim",3.14);
+      declare_parameter("liner_vel_lim",1.0); // 1.5
+      declare_parameter("liner_accel_lim",0.75); // 1.5
+      declare_parameter("angular_vel_lim",0.4); // 3.14
+      declare_parameter("angular_accel_lim",0.75); // 3.14
       declare_parameter("calculate_odom_from_ypspur",true);
       declare_parameter("debug_mode",false);
       

@@ -2,5 +2,9 @@ icart_mini_driver_node:
   ros__parameters:
     odom_frame_id: odom
     base_frame_id: base_link
+    linear_vel_lim: 1.0
+    linear_accel_lim: 0.75
+    angular_vel_lim: 0.4
+    angular_accel_lim: 0.75
     hz: 100
     publish_odom_tf: false
